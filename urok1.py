@@ -1,3 +1,4 @@
+
 n = int(input())
 sumofnum = 0 
 for i in range(n):
@@ -31,6 +32,17 @@ if a < b:
 
 
 
+
+a = int(input()) 
+multiplyofnum = 1
+for i in range(1 , a + 1):
+    multiplyofnum = multiplyofnum * i
+print(multiplyofnum)
+        
+
+
+
+
 a = int(input()) 
 b = int(input())
 if a%2 != 0:
@@ -45,5 +57,17 @@ multiplyofnum = 1
 for i in range(1 , a + 1):
     multiplyofnum = multiplyofnum * i
 print(multiplyofnum)
+
+
+
+n = int(input())
+sumofnum = 0
+sumofnot = 0
+for i in range(n-1):
+    x = int(input())
+    sumofnot = sumofnot + x 
+for i in range(1,n+1):
+    sumofnum += i
+print(sumofnum - sumofnot)
         
         

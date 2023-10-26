@@ -1,0 +1,6 @@
+n = int(input())
+sumofnum = 0 
+for i in range(n):
+    x = int(input())
+    sumofnum = sumofnum + x
+print(sumofnum)    

@@ -1,12 +1,12 @@
 num1 = int(input())
 num2 = int(input())
 num3 = int(input())
-if num1 != num2 and num2 != num3 and num3 != num10:
+if num1 != num2 and num2 != num3 and num3 != num1:
     print ("0")
 elif num1 == num2 and num2 == num3:
     print ("3")
 else:
-    print ("2")  
+    print ("2")
 
 
 
@@ -17,8 +17,10 @@ num3 = int(input())
 num4 = int(input())
 if num1 == num3 or num2 == num4 or num2 == num3:
     print ("YES")
-elif num1 != num3 and num2 != num4:
+else:
     print ("NO")        
+
+
 
 
 
@@ -27,14 +29,11 @@ num1 = int(input())
 num2 = int(input())
 num3 = int(input())
 num4 = int(input())
-if num1 == num4 and num2 == num3:
+if abs(num1 - num3) == abs(num2 - num4):
     print ("YES")
-elif num1 == num4 or num2 == num3:
-    print ("NO")    
-elif num1 != num3 and num2 != num4:
-    print ("NO")
 else:
-    print("YES")
+    print ("NO")
+
 
 
 

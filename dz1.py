@@ -47,3 +47,16 @@ if num1 + num3 == num2 + num4:
     print ("YES")
 else:
     print ("NO")
+
+
+
+
+
+n = int(input())
+sumofnum = 0 
+for i in range(n):
+    x = int(input())
+    sumofnum = sumofnum + x
+print(sumofnum)    
+
+

@@ -1,7 +1,12 @@
 num = int(input())
-if num == 1:
-    print ("NO")
-elif num%2 != 0 and num%13 != 0 and num%101:
+if num  == 2:
+    print ("YES")
+if num != 1 and num%2 != 0:
     print ("YES")
 else:
-    print ("NO")
+    print ("NO") 
+
+
+
+
+

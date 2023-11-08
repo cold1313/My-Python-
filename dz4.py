@@ -21,3 +21,16 @@ else:
 
 
 
+num  = int(input())
+num = num*45 + num//2*5 + ((num+1)//2-1)*15
+print(9+ num//60 , num%60)
+
+
+
+num = int(input())
+print(num//10 % 10)
+
+
+
+
+

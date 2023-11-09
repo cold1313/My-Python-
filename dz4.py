@@ -55,15 +55,21 @@ print(notlessthan0)
 
     
 n = int(input())
-factorial = 0
+factorial = 1
 for i in range (1 , n + 1):
-    factorial = factorial + factorial * n    
+    factorial = factorial * i    
 print(factorial)    
 Вводится натуральное число n. Посчитайте его факториал.
 
 
 
-    
+n = int(input())
+factorial = 1
+sumoffactorial = 0
+for i in range (1 , n + 1):
+    factorial = factorial * i 
+    sumoffactorial = sumoffactorial + factorial
+print(sumoffactorial)     
 По данному натуральному числу n посчитайте сумму факториалов от 1 до n включительно. Использовать можно только 1 цикл, библиотекой math пользоваться запрещено
 
 

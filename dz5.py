@@ -58,3 +58,22 @@ while num != 0:
 print(numofnum)
 
 
+
+nextnum = int(input())
+prevnum = 10**9
+localmax = 1
+totalmax = 0
+while nextnum != 0:
+    if nextnum == prevnum:
+        localmax = localmax + 1 
+    if nextnum != prevnum:
+        if localmax > totalmax:
+                totalmax = localmax
+        localmax = 1
+    prevnum = nextnum  
+    nextnum = int(input())
+if localmax > totalmax:
+    totalmax = localmax    
+print(totalmax)
+            
+

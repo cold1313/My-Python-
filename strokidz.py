@@ -4,13 +4,14 @@ for i in range(len(s)):
 
 
 s = input()
-s1 = []
+s1 = ''
 numofunique = 0
 for i in s: 
 	if i not in s1: 
 		numofunique = numofunique + 1
-		s1.append(i)
+		s1 += i
 print(numofunique)
+print(s1)
 
 
 

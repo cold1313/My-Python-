@@ -16,8 +16,15 @@ print(s1)
 
 
 s = input()
-sumofnum = ''
+a = 0
+ans = 0
 for i in s:
     if i.isdigit():
-        sumofnum = sumofnum + i
-print(sumofnum)
+        a = a*10 + int(i)
+    else:
+        if a != 0:
+            ans = ans + a
+        a = 0
+if a != 0:
+    ans = ans + a        
+print(ans)

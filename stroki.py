@@ -31,4 +31,14 @@ for i in s:
         numofnum += 1
 print(numofnum)
 
+
+
+
+s = input()
+sumofnum = 0
+for i in s:
+    if i.isdigit():
+        sumofnum += sumofnum + i
+print(sumofnum)
+
     

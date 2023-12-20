@@ -79,4 +79,19 @@ for i in range(0 , len(arr)):
         if arr[i] > arr[i - 1]:
             print(arr[i])
 
+a = list(map(int, input().split()))
+x = int(input())
+place = 0
+while place < len(a) and a[place] >= x:
+    place += 1
+print(place + 1)
+
+
+
+arr = list(map(int, input().split()))
+for i in range(1, len(arr) , 2):
+    arr[i-1] , arr[i] = arr[i] , arr[i-1]
+print(arr)
+
+
 

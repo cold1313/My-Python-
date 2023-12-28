@@ -97,8 +97,14 @@ for i in range(1, len(arr) , 2):
 print(*arr)
 
 
-4 сделать
-
+4 задача на массивы
+arr = list(map(int, input().split()))
+k = int(input())
+for i in range(len(arr)):
+    if i > k:
+        arr[i-1] , arr[i] = arr[i] , arr[i-1]
+arr.pop()
+print(*arr)
 
 
 1
@@ -116,12 +122,12 @@ print(s)
 
 3 
 s = "9" * 65
-while s.find("999") != -1 and s.find("222") != -1:
+while s.find("999") != -1 or s.find("222") != -1:
     if s.find("222"):
-        s = s.replace("222" , "9")
+        s = s.replace("222" , "9",1)
     else:
-        s = s.replace("999" , "2")
-print(s)   !!!!!!
+        s = s.replace("999" , "2",1)
+print(s)  
 
 
 s = "9" * 65
@@ -157,3 +163,15 @@ while ('19' in s) or ("299" in s) or ("3999" in s):
         s=s.replace('299','3',1)
         s=s.replace('3999','1',1)
 print(s)
+
+
+2 задача на массивы
+arr = list(map(int, input().split()))
+n = int(input())
+place = 1
+for i in range(n):
+    if arr[i] >= n:
+        place += 1
+    else:
+        break
+print(place)

@@ -75,10 +75,13 @@ for i in range(n):
 DZ!!!
 
 arr = list(map(int, input().split()))
-for i in range(0 , len(arr)):
+for i in range(len(arr)):
         if arr[i] > arr[i - 1]:
             print(arr[i])
 
+
+
+переделать 2 задачу
 a = list(map(int, input().split()))
 x = int(input())
 place = 0
@@ -91,7 +94,66 @@ print(place + 1)
 arr = list(map(int, input().split()))
 for i in range(1, len(arr) , 2):
     arr[i-1] , arr[i] = arr[i] , arr[i-1]
-print(arr)
+print(*arr)
+
+
+4 сделать
 
 
 
+1
+
+s = "1" * 77
+while s.find("111") != -1:
+    s = s.replace("111" , "2")
+    s = s.replace("222" , "11")
+print(s)
+
+
+
+2 = -
+
+
+3 
+s = "9" * 65
+while s.find("999") != -1 and s.find("222") != -1:
+    if s.find("222"):
+        s = s.replace("222" , "9")
+    else:
+        s = s.replace("999" , "2")
+print(s)   !!!!!!
+
+
+s = "9" * 65
+while ('999' in s) or ('222' in s):
+    if '222' in s:
+        s=s.replace('222','9',1) 
+    else:
+        s=s.replace('999','2',1)
+print(s)
+
+4
+s = "1" + "9" * 98
+while ('19' in s) or ('299' in s) or ("3999" in s):
+        s=s.replace('19','2',1) 
+        s=s.replace('299','3',1)
+        s=s.replace('3999','1',1)
+print(s)
+
+
+s = "7" * 85
+while ('333' in s) or ("777" in s):
+    if "333" in s:    
+        s=s.replace('333','7',1)
+    else:
+         s=s.replace('777','3',1)
+print(s)
+
+
+
+s = "1" + "9" * 98
+while ('19' in s) or ("299" in s) or ("3999" in s):   
+        s=s.replace('19','2',1)
+        s=s.replace('299','3',1)
+        s=s.replace('3999','1',1)
+print(s)

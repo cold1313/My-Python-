@@ -175,3 +175,17 @@ for i in range(n):
     else:
         break
 print(place)
+
+
+
+
+ for a in range(1, 50):
+    for b in range(1, 50):
+        for c in range(1, 50):
+            string = '0' + a * '1' + b * '2' + c * '3' + '0'
+            while '00' not in string:
+                string = string.replace('01', '210', 1)
+                string = string.replace('02', '320', 1)
+                string = string.replace('03', '3012', 1)
+            if string.count('1') == 23 and string.count('2') == 48 and string.count('3') == 41:
+                print(a + b + c + 2)

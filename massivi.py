@@ -189,3 +189,33 @@ print(place)
                 string = string.replace('03', '3012', 1)
             if string.count('1') == 23 and string.count('2') == 48 and string.count('3') == 41:
                 print(a + b + c + 2)
+
+
+
+nums = list()
+target = int(input())
+x = []
+for i in range(0 , len(nums)-1): 
+    if nums[i] + nums[i+1] == target:
+        x = [i , i+1]
+print(x) 
+
+римские
+def (s):
+    roman = {
+        "I" : 1,
+        "V" : 5, 
+        "X" : 10, 
+        "L" : 50, 
+        "C" : 100, 
+        "D" : 500, 
+        "M" : 1000 
+        } 
+int = 0
+for i in range(len(s) - 1): #цикл до второго с конца, иначе не выполн иф
+    if roman[s[i]] < roman[s[i+1]]: #разбор на примере
+        int -= roman[s[i]]
+    else:
+        int += roman[s[i]]
+    return int + roman[s[-1]] #добавляем последний элем
+

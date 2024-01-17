@@ -376,4 +376,11 @@ for i in range (4, 10000):
 
 Определите наименьшее значение n, при котором сумма цифр в строке, получившейся в результате выполнения программы, равна 64.
 
+    class Solution(object):
+    def isPalindrome(nums, target):
+        x = []
+        if x == x[::-1] and x[0] != "-":
+            return "True"
+        else: 
+            return "False" 
 

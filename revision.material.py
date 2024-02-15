@@ -48,3 +48,9 @@ for elem in string:  # each element in string
 
 for i in range(len(string)):  # each index of elements in string
     print(string[i])
+
+s = input()  # 1 12 13
+# arr = []
+arr = list(map(int, s.split()))
+
+arr = [int(x) for x in s.split()]

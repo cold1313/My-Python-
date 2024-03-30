@@ -144,3 +144,34 @@ x = int(x[:-5] , 2)
 y = bin(1222222222)[2:]
 y = int(y[:-5] , 2)
 print(x-y)
+
+
+8 nomer iz dz
+for i in range(1000, 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    third = int(x[2]) + int(x[3])
+    
+    maximum = max(first , second , third)
+    secondmax = (first + second + third) - (max(first , second , third)) - (min(first , second , third))
+
+    y = str(secondmax) + str(maximum)
+    if int(y) == 1418:
+        print(i)
+        break
+
+
+9 nomer iz dz 
+for i in range(100, 1000):
+    y = 0
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    
+    if second > first:
+        y = str(second) + str(first)
+    
+    if int(y) == 159:
+        print(i)
+        break

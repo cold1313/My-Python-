@@ -27,3 +27,13 @@ for n in range(1, 100):
         break
 
 
+for i in range (1000 , 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[2]) + int(x[3])
+    if first > second:
+        y = str(second) + str(first) 
+        if int(y) == 117:
+            print(i)
+            
+

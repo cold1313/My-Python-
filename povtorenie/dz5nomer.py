@@ -23,7 +23,7 @@ for n in range(1, 100):
     s = s + str(summa % 2)
     r = int(s, 2) 
     if r > 97:
-        print(r)
+        print(n)
         break
 
 

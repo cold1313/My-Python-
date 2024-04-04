@@ -35,5 +35,31 @@ for i in range (1000 , 10000):
         y = str(second) + str(first) 
         if int(y) == 117:
             print(i)
+
+
+
+for i in range (100, 10000):
+    x = bin(i)[2:]
+    x = str(x)
+    x = x[:-1]
+    if i%2 == 0:
+        x = x + "01"
+    if i%2 != 0:
+        x = x + "10"
+    y = int(x, 2)
+    if y == 2018:
+        print(i)
+
+
+
+for i in range (100, 1000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    if first >= second:
+        y = str(second) + str(first)
+        if y == "812":
+            print(i)
+            break
             
 

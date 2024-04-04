@@ -50,14 +50,14 @@ for i in range (100, 10000):
     if y == 2018:
         print(i)
 
-
-
 for i in range (100, 1000):
     x = str(i)
     first = int(x[0]) + int(x[1])
     second = int(x[1]) + int(x[2])
     if first >= second:
         y = str(second) + str(first)
+    else:
+        y = str(first) + str(second)
         if y == "812":
             print(i)
             break

@@ -62,4 +62,8 @@ for i in range (100, 1000):
             print(i)
             break
             
-
+x = '1140'
+y = 0
+for i in range (len(x)):
+  y += int(x[i])
+print(y) # посчитать сумму цифр числа 

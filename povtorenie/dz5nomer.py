@@ -73,3 +73,17 @@ for i in range (100 , 1000):
     if y == "1115":
         print(i)
         break
+
+for i in range (1 , 100000):
+    x = bin(i)[2:]
+    sum = 0
+    for j in range (len(x)):
+        sum += int(x[j])
+    x += str(sum%2)
+    second_sum = 0
+    for j in range (len(x)):
+        second_sum += int(x[j])
+    x += str(second_sum%2)
+    if int(x , 2) > 77:
+        print(i)
+        break

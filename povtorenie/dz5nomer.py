@@ -115,4 +115,12 @@ for i in range (1000 , 10000):
     y = str(second_max) + str(first_max)
     if y == "1515":
         print(i)
-        
+
+
+перевод из 10-тичной в 3-ичную
+x = int(input())
+x_v_troichnoy = ""
+while x > 0:
+    x_v_troichnoy += str(x%3)
+    x//= 3
+x_v_troichnoy = x_v_troichnoy[::-1]

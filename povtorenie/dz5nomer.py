@@ -104,3 +104,15 @@ for i in range (2 , 100000):
     if y == 5:
         print(i)
         break
+
+for i in range (1000 , 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    third = int(x[2]) + int(x[3])
+    first_max = max(first, second, third)
+    second_max = (first + second + third) - (first_max + min(first, second, third))
+    y = str(second_max) + str(first_max)
+    if y == "1515":
+        print(i)
+        

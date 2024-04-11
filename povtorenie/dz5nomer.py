@@ -87,3 +87,20 @@ for i in range (1 , 100000):
     if int(x , 2) > 77:
         print(i)
         break
+
+
+24 nomer:
+
+for i in range (2 , 100000):
+    x = bin(i)[2:]
+    num_of_one = 0
+    num_of_zero = 0
+    for j in range(len(x)):
+        if j%2 == 0 and x[j] == "0":
+            num_of_zero += 1
+        if j%2 != 0 and x[j] == "1":
+            num_of_one += 1
+    y = abs(num_of_one - num_of_zero)
+    if y == 5:
+        print(i)
+        break

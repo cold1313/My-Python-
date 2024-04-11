@@ -60,3 +60,16 @@ y = 0
 for i in range (len(x)):
   y += int(x[i])
 print(y) # посчитать сумму цифр числа 
+
+
+for i in range (100 , 1000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    if first > second:
+        y = str(second) + str(first)
+    else:
+        y = str(first) + str(second)
+    if y == "1115":
+        print(i)
+        break

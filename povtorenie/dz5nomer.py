@@ -27,14 +27,17 @@ for n in range(1, 100):
         break
 
 
-for i in range (1000 , 10000):
+for i in range (10000 , 100000):
     x = str(i)
-    first = int(x[0]) + int(x[1])
-    second = int(x[2]) + int(x[3])
-    if first > second:
-        y = str(second) + str(first) 
-        if int(y) == 117:
-            print(i)
+    first = int(x[0]) + int(x[2]) + int(x[4])
+    second = int(x[1]) + int(x[3])
+    if first >= second:
+        y = str(second) + str(first)
+    else:
+        y = str(first) + str(second)
+    if y == "723":
+        print(i)
+        break
 
 
 
@@ -50,17 +53,7 @@ for i in range (100, 10000):
     if y == 2018:
         print(i)
 
-for i in range (100, 1000):
-    x = str(i)
-    first = int(x[0]) + int(x[1])
-    second = int(x[1]) + int(x[2])
-    if first >= second:
-        y = str(second) + str(first)
-    else:
-        y = str(first) + str(second)
-        if y == "812":
-            print(i)
-            break
+
             
 x = '1140'
 y = 0

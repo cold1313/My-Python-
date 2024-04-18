@@ -124,3 +124,15 @@ while x > 0:
     x_v_troichnoy += str(x%3)
     x//= 3
 x_v_troichnoy = x_v_troichnoy[::-1]
+
+
+for i in range (1000 , 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    third = int(x[2]) + int(x[3])
+    first_max = max(first , second , third)
+    second_max = (first + second + third) - (first_max + min(first , second , third))
+    y = str(first_max) + str(second_max)
+    if y == "1418":
+        print(i)

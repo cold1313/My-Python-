@@ -175,3 +175,11 @@ for i in range(100, 1000):
     if int(y) == 159:
         print(i)
         break
+
+
+def f(s):
+    if s == 1:
+        return 1
+    else:
+        return f(s-1) * (2*s + 1)
+print(f(4))

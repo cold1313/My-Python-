@@ -24,7 +24,7 @@ for x in range(1 , 1000 + 1):
 print(count)
 
 
-15 nomer
+15 nomer iz dz
 def f(x):
     if x == 1:
       return 1
@@ -33,3 +33,15 @@ def f(x):
     if x > 1 and x % 2 != 0:
       return 2 * f(x-2)
 print(f(26))
+
+13 nomer iz dz
+def f(x):
+  if x == 1:
+    return 1
+  if x == 2:
+    return 2
+  if x > 2:
+    return f(x-2) * (x-1)
+print(f(8)) 
+
+

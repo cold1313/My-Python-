@@ -44,4 +44,12 @@ def f(x):
     return f(x-2) * (x-1)
 print(f(8)) 
 
+12 nomer iz dz
+def f(x):
+  if x <= 2:
+    return x + 4
+  if x > 2:
+    return f(x-1) + f(x-2)
+print(f(6))
+
 

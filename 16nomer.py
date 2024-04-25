@@ -53,7 +53,7 @@ def f(x):
 print(f(6))
 
 
-nachalo resh 8 nomer:
+8 nomer:
 
 def f(x):
   if x < 3:
@@ -61,6 +61,11 @@ def f(x):
   if x > 2 and x % 2 != 0:
     return f(x-1) + 3 * f(x-2)
   if x > 2 and x % 2 == 0:
-    return 
+    sum = 0
+    for i in range (1 , x):
+      sum += f(i)
+    return sum
 
 print(f(28))
+
+

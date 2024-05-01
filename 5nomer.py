@@ -26,3 +26,16 @@ for i in range (1 , 10000):
     if y > 105:
         print(y)
         break
+
+
+for i in range(1000 , 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    third = int(x[2]) + int(x[3])
+    second_max = str(first + second + third - max(first , second , third) - min(first , second , third))
+    max = str(max(first , second , third))
+    ans = second_max + max
+    if ans == "1215":
+        print(i)
+        break

@@ -33,5 +33,13 @@ while x > 0:
 print(count)
 
 
-
+for i in range (0 , 15 + 1):
+    x = "1" + str(i) + "BAD"
+    y = "2" + "C" + str(i) + "FE"
+    x = int(x , 16)
+    y = int(y , 16)
+    ans = x + y
+    if ans % 15 == 0:
+        print(ans / 15)
+        break
 

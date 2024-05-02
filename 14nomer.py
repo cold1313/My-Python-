@@ -43,3 +43,10 @@ for i in range (0 , 15 + 1):
         print(ans / 15)
         break
 
+x = 4 ** 2020 + 2 ** 2017 - 15
+y = bin(x)[2:]
+count = 0
+for i in range(len(y)):
+    if y[i] == "1":
+        count += 1
+print(count)

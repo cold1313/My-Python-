@@ -66,3 +66,11 @@ for i in '0123456789ABCD':
     rez = int(x , 16) + int(y , 14)
     if rez % 154 == 0:
         print(rez / 154)
+
+for i in "0123456789AB":
+    for j in "0123456789AB":
+        x = i + "231" + j
+        y = "78" + i + "98" + j
+        rez = int(x , 12) + int(y , 14)
+        if rez % 99 == 0:
+            print(rez / 99)

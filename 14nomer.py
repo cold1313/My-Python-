@@ -50,3 +50,12 @@ for i in range(len(y)):
     if y[i] == "1":
         count += 1
 print(count)
+
+
+for i in range (0 , 8 + 1):
+    x = "88" + str(i) + "4" + str(i)
+    y = "7" + str(i) + "344"
+    rez = int(x , 9) + int(y , 9)
+    ans = 0
+    if rez % 67 == 0:
+        print(rez / 67)

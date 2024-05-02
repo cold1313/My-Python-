@@ -82,3 +82,12 @@ for i in "0123456789A":
         rez = int(x , 11) + int(y , 19)
         if rez % 305 == 0:
             print(rez / 305)
+
+
+x = 4 ** 2016 + 2 ** 2015 - 7
+y = bin(x)[2:]
+count = 0
+for i in range(len(y)):
+    if y[i] == "1":
+        count += 1
+print(count) 

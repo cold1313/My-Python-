@@ -39,3 +39,20 @@ for i in range(1000 , 10000):
     if ans == "1215":
         print(i)
         break
+
+
+for i in range(1 , 256):
+    x = bin(i)[2:]
+    if len(x) < 8:
+        a = 8 - len(x)
+        x = a * '0' + x
+    new_s = ''
+    for j in range(len(x)):
+        if x[j] == "0":
+            new_s += '1'
+        else:
+            new_s += '0'
+    y = int(new_s , 2)
+    ans = y - i
+    if ans == 133:
+        print(i)

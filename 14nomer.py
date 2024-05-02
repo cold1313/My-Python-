@@ -59,3 +59,10 @@ for i in range (0 , 8 + 1):
     ans = 0
     if rez % 67 == 0:
         print(rez / 67)
+
+for i in '0123456789ABCD':
+    x = "3D4" + i
+    y = "4" + i + "C4"
+    rez = int(x , 16) + int(y , 14)
+    if rez % 154 == 0:
+        print(rez / 154)

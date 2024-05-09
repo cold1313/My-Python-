@@ -193,3 +193,18 @@ for i in range(1 , 256):
     ans = y - i
     if ans == 133:
         print(i)
+
+
+
+for i in range (2, 100000):
+    x = bin(i)[2:]
+    x = str(x)
+    for i in range(len(x)):
+        if i % 2 == 0:
+            x += "10"
+        if i % 2 != 0:
+            x += "01"
+        y = int(x , 2)
+        if y < 109:
+            print(y)
+            break 

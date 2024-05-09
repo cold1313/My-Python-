@@ -115,6 +115,19 @@ for i in range (100 , 1000):
         print(i)
         break
 
+
+for i in range (1000 , 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    third = int(x[2]) + int(x[3])
+    max_num = max(first , second , third)
+    second_max = (first + second + third) - max_num - min(first , second , third )
+    y = str(second_max) + str(max_num)
+    if y == "613":
+        print(i)
+        break
+
 for i in range (1 , 100000):
     x = bin(i)[2:]
     sum = 0

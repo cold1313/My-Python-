@@ -221,3 +221,17 @@ for i in range (2, 100000):
         if y < 109:
             print(y)
             break 
+
+
+
+for i in range (1000 , 10000):
+    x = str(i)
+    first = int(x[0]) + int(x[1])
+    second = int(x[1]) + int(x[2])
+    third = int(x[2]) + int(x[3])
+    max_num = max(first , second , third)
+    second_max = (first + second + third) - max_num - min(first , second , third )
+    y = str(second_max) + str(max_num)
+    if y == "613":
+        print(i)
+        break

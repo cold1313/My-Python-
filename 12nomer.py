@@ -51,3 +51,24 @@ for i in range(len(s)):
     if s[i] == "1":
         count += 1
 print(count)
+
+
+s = ">" + 26 * "1" + 10 * "2" + 14 * "3"
+while ">1" in s or ">2" in s or ">3" in s:
+    if ">1" in s:
+        s = s.replace (">1" , "22>" , 1)
+    if ">2" in s:
+        s = s.replace (">2" , "2>" , 1)
+    if ">3" in s:
+        s = s.replace (">3" , "1>" , 1)
+count_1 = 0
+count_2 = 0
+count_3 = 0
+for i in range(len(s)):
+    if s[i] == "1":
+        count_1 += 1
+    if s[i] == "2":
+        count_2 += 1
+    if s[i] == "3":
+        count_3 += 1
+print(count_1 , count_2 , count_3)

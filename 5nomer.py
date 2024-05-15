@@ -235,3 +235,29 @@ for i in range (1000 , 10000):
     if y == "613":
         print(i)
         break
+
+
+    for i in range (1000 , 10000):
+        x = str(i)
+        first = int(x[0]) + int(x[1])
+        second = int(x[1]) + int(x[2])
+        third = int(x[2]) + int(x[3])
+        max_num = str(max(first , second , third))
+        second_max = str(((first + second + third) - min(first , second , third) - max(first , second , third)))
+        y = max_num + second_max
+        if y == "1517":
+            print(i)
+            break
+
+for i in range (2 , 1000):
+    x = bin(i)[2:]
+    x = str(x)
+    x += x[-1]
+    sum = 0
+    for j in range(len(x)):
+        sum += int(x[j])
+    x += str(sum % 2)
+    y = int(x  , 2)
+    if y > 105:
+        print(y)
+        break

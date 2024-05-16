@@ -113,3 +113,16 @@ while x > 0:
         count += 1
     x //= 5
 print(count)
+
+
+for i in range (0 , 9):
+    for j in range(0 , 9):
+        x = "88" + str(i) + "4" + str(j)
+        y = "7" + str(i) + "44" + str(j)
+        a = int(x , 9)
+        b = int(y , 11)
+        ans = a + b
+        if ans % 61 == 0:
+            print(ans / 61)
+            break
+

@@ -99,3 +99,19 @@ for i in range (4 , 1000):
     if 3 * s.count("3") + 2 * s.count("2") + 5 * s.count("5") == 27:
         print(i)
         break
+
+
+for i in range(3 , 10000):
+    s = "3" + "5" * i
+    while "25" in s or "355" in s or "555" in s:
+        if "25" in s:
+            s = s.replace("25" , "3" , 1)
+        if "355" in s:
+            s = s.replace("355" , "52" , 1)
+        if "555" in s:
+            s = s.replace("555" , "23" , 1)
+    sum = 0
+    for j in range(len(s)):
+        sum += int(s[j])
+    if sum == 27:
+        print(i)

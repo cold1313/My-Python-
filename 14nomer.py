@@ -126,3 +126,12 @@ for i in range (0 , 9):
             print(ans / 61)
             break
 
+
+for i in "01233456789ABCDEFGHI":
+        x = "78" + str(i) + "79643"
+        y = "25" + str(i) + "43"
+        z = "63" + str(i) + "5"
+        rez = int(x , 19) + int(y , 19) + int(z , 19)
+        if rez % 18 == 0:
+            print(rez / 18)
+            break

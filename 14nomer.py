@@ -135,3 +135,13 @@ for i in "01233456789ABCDEFGHI":
         if rez % 18 == 0:
             print(rez / 18)
             break
+
+for i in range(0 , 8):
+    for j in range(0 , 8):
+        x = str(i) + "01" + str(j) + "4"
+        y = str(i) + str(j) + "544"
+        a = int(x , 9)
+        b = int(y , 8)
+        if (a + b) % 89 == 0:
+            print((a + b)/89)
+            break

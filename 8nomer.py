@@ -54,3 +54,19 @@ for x in arr:
     if x.count("Е") == 2 and x[1] != "Ф":
         count += 1
 print(count)
+
+
+from itertools import *
+c1 = '1357'
+c2 = '2468'
+count = 0
+for i in product(c1,c2,c1,c2,c1,c2,c1,c2,c1,c2,c1):
+    s = ''.join(i)
+    flag = 1
+    for i in range(10):
+        if s.count (str(i)) > 4:
+            flag = 0
+            break
+    if flag:
+        count += 1        
+print(count * 2)

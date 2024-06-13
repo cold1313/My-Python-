@@ -36,3 +36,21 @@ for elem in arr:
     if elem.count('Р') == 1 and elem.count('Г') == 1 and elem.count('Н') <= 1:
         ans += 1
 print(ans)
+
+
+from itertools import *
+count = 0
+arr = product("АВХ" , repeat=6)
+for x in arr:
+    if x.count("Х") == 1:
+        count += 1
+print(count)
+
+
+from itertools import *
+count = 0
+arr = product("КОНФЕТА" , repeat=5)
+for x in arr:
+    if x.count("Е") == 2 and x[1] != "Ф":
+        count += 1
+print(count)

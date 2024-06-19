@@ -70,3 +70,24 @@ for i in product(c1,c2,c1,c2,c1,c2,c1,c2,c1,c2,c1):
     if flag:
         count += 1        
 print(count * 2)
+
+
+from itertools import product   
+cnt = 0
+num = 0
+arr = product('АГИЛМОРТ', repeat=5) #если написано в алфавитном порядке, то букввы в слове надо писать по алфавиту! 
+for elem in arr:
+    num += 1
+    if elem[0] != "Г" and elem.count("И") >= 2 and num % 2 != 0:
+        cnt += 1
+print(cnt)
+
+from itertools import product
+count = 0
+num = 0
+arr = product("ЕИМНРТ" , repeat=10)
+for elem in arr:
+    num += 1
+    if num % 3 == 0 and (elem[0] == "Е" or elem[0] == "И") and elem.count("Т") == 1:
+        count += 1
+print(count)

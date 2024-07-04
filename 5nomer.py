@@ -272,3 +272,14 @@ for i in range (1000):
     if int(x , 2) > 516:
         print(i)
         break
+
+
+for i in range (100 , 1000):
+    x = str(i)
+    first = int(x[0]) * int(x[1])
+    second = int(x[1]) * int(x[2])
+    k1 = str(max(first , second))
+    k2 = str(min(first , second))
+    ans = k2 + k1
+    if ans == "621":
+        print(i)

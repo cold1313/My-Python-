@@ -261,3 +261,14 @@ for i in range (2 , 1000):
     if y > 105:
         print(y)
         break
+
+
+for i in range (1000):
+    x = bin(i)[2:]
+    if i % 2 == 0:
+        x = "10" + x
+    if i % 2 != 0:
+        x = "1" + x + "01"
+    if int(x , 2) > 516:
+        print(i)
+        break

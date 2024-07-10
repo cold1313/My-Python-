@@ -283,3 +283,16 @@ for i in range (100 , 1000):
     ans = k2 + k1
     if ans == "621":
         print(i)
+
+
+for i in range (1 ,  10000):
+    x = bin(i)[2:]
+    x = str(x)
+    x = x[:-1]
+    if i % 2 == 0:
+        x += "01"
+    if i % 2 != 0:
+        x += "10"
+    y = int(x , 2)
+    if y == 2018:
+        print(i)

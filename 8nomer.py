@@ -91,3 +91,18 @@ for elem in arr:
     if num % 3 == 0 and (elem[0] == "Е" or elem[0] == "И") and elem.count("Т") == 1:
         count += 1
 print(count)
+
+
+from itertools import *
+count = 0
+arr = product("МЕТРО" , repeat=4)
+for x in arr:
+    if (x[0] == "Е" or x[0] == "О") and (x[3] == "М" or x[3] == "Т" or x[3] == "Р"):
+        count += 1
+print(count)
+
+from itertools import *
+count = 0
+arr = product("012345678" , repeat=5)
+for x in arr:
+    if x.count("5") == 1 and x[0] != "0":

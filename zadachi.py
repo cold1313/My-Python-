@@ -20,4 +20,22 @@ for j in range(p):
         print("OK")
     else:
         print("Access denied")
+
+
+my_dict = {}
+array_split = ["," , "." , "!" , "?" , " "]
+arr = list(map(str, input().split(array_split)))
+for i in arr:
+    my_dict[i] = arr.count(i)
+count = 10**9
+ans = ""
+for key, value in my_dict.items():
+    if value < count:
+        ans = key
+        count = value
+    elif value == count:
+        if key < ans:
+            ans = key
+print(ans)
+
     

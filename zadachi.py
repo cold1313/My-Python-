@@ -39,3 +39,16 @@ for key, value in my_dict.items():
 print(ans)
 
     
+
+
+arr = list(map(str, input().split()))
+num_of_num = {}
+
+for i in arr:
+    i = int(i)  
+    if i in num_of_num:
+        num_of_num[i] += 1
+    else:
+        num_of_num[i] = 1
+
+    print(f"(i) - {num_of_num[i]}")

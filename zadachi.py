@@ -41,7 +41,7 @@ print(ans)
     
 
 
-arr = list(map(str, input().split()))
+1. arr = list(map(str, input().split()))
 num_of_num = {}
 
 for i in arr:
@@ -52,3 +52,31 @@ for i in arr:
         num_of_num[i] = 1
 
     print(f"(i) - {num_of_num[i]}")
+
+2. Со второй задачей возникла трудность с выводом:
+
+def count(text):
+    ans = []
+    counts = {}
+
+for j in text:
+    if j in counts:
+        counts[j] += 1
+    else:
+        counts[j] = 1
+
+3. n = int(input())
+synonym = {}
+
+for i in range(n):
+    a , b = input().split()
+    synonym[a] = b
+    synonym[b] = a
+    
+x = input()
+
+print(synonym[x])
+
+
+
+

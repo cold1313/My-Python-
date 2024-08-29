@@ -106,3 +106,12 @@ count = 0
 arr = product("012345678" , repeat=5)
 for x in arr:
     if x.count("5") == 1 and x[0] != "0":
+
+
+from itertools import *
+arr = product("0123" , repeat=3)
+count = 0
+for i in arr:
+    if i[0] != "0" and int(i[0]) + int(i[2]) > int(i[1]):
+        count += 1
+print(count)

@@ -144,3 +144,17 @@ for i in arr:
     if count_odd == 2 and i[0] != "0" and i.count('4') == 1:
         ans += 1
 print(ans)
+
+from itertools import *
+arr = product("МУЖЧИНА" , repeat = 6)
+count = 0
+num = 1
+for i in arr:
+    if i[0] != "Ч" and i.count("Ж") == 1 and i.count("М") <= 1 and i.count("У") <= 1 and i.count("Ч") <= 1 and i.count("И") <= 1 and i.count("Н") <= 1 and i.count("А") <= 1: 
+        if num%2 != 0:
+            count += 1
+        num += 1
+print(count)
+
+
+

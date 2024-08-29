@@ -132,3 +132,15 @@ for i in arr:
         if check == True and len(ar) == len(i):
             count += 1
 print(count)
+
+from itertools import *
+arr = product("012345678" , repeat = 6)
+ans = 0
+for i in arr:
+    count_odd = 0
+    for j in range(len(i)):
+        if int(i[j]) % 2 != 0:
+            count_odd += 1
+    if count_odd == 2 and i[0] != "0" and i.count('4') == 1:
+        ans += 1
+print(ans)

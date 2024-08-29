@@ -115,3 +115,20 @@ for i in arr:
     if i[0] != "0" and int(i[0]) + int(i[2]) > int(i[1]):
         count += 1
 print(count)
+
+
+from itertools import *
+count = 0
+arr = product("0234567" , repeat = 5)
+for i in arr:
+    if i[0] != "0":
+        check = True
+        ar = set()
+        for j in range(len(i)-1):
+            ar.add(i[j])
+            if (int(i[j]) + int(i[j+1])) % 2 == 0:
+                check = False
+        ar.add(i[-1])
+        if check == True and len(ar) == len(i):
+            count += 1
+print(count)

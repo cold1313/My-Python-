@@ -164,3 +164,20 @@ for i in arr:
     if int(i[0]) + int(i[2]) > int(i[1]):
         count += 1
 print(count)
+
+
+40 nomer dz: 
+
+import itertools 
+alphabet = "ABCDXYZ"
+s = 'XYZ'
+s1 = 'ABCD'
+ar = itertools.product(alphabet, repeat=4) #Размещение с повторением
+arl = []
+for i in ar:
+    arl.append(list(i))
+count = 0
+for e in arl:
+    if e[0] in s and e[1] in s and e[2] in s1 and e[3] in s1:
+        count += 1
+print(count)

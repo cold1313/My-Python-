@@ -157,4 +157,10 @@ for i in arr:
 print(count)
 
 
-
+from itertools import *
+arr = product("0123" , repeat = 3)
+count = 0
+for i in arr:
+    if int(i[0]) + int(i[2]) > int(i[1]):
+        count += 1
+print(count)

@@ -145,3 +145,15 @@ for i in range(0 , 8):
         if (a + b) % 89 == 0:
             print((a + b)/89)
             break
+
+arr = "012345678"
+for x in arr:
+    for y in arr:
+        for z in arr:
+            for w in arr:
+                a = z + x + y + x + "7"
+                b = x + y + "836"
+                c = w + z + x + "64"
+                if (int(a , 9) + int(b , 9) == int(c , 9)) and  w != "0" and x != "0" and z != "0":
+                    print(int(x + y + z + w , 9))
+                    break

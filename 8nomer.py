@@ -181,3 +181,31 @@ for e in arl:
     if e[0] in s and e[1] in s and e[2] in s1 and e[3] in s1:
         count += 1
 print(count)
+
+from itertools import *
+x = "01234567"
+arr = permutations(x , 5)
+ans = 0
+for elem in arr:
+    if elem[0] == "0":
+        continue
+    flag = True
+    for letter in elem:
+        if elem.count(letter) > 1:
+            flag = False
+            break
+    if flag == False:
+        continue
+    flag = True
+    for i in range(len(elem)-1):
+        if (int(elem[i]) + int(elem[i + 1]))%2 == 0:
+            flag = False
+            break
+    if flag == True:
+        ans += 1
+print(ans)
+    
+
+
+
+

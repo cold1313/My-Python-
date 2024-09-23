@@ -204,7 +204,32 @@ for elem in arr:
     if flag == True:
         ans += 1
 print(ans)
-    
+
+
+from itertools import *
+x = "01234567"
+ans = 0
+arr = product(x , repeat = 5)
+for elem in arr:
+    if elem[0] == "0" or elem.count("1") > 0:
+        continue
+    flag = True
+    for letter in elem:
+        if elem.count(letter) > 1:
+            flag = False
+            break
+    if flag == False:
+        continue
+    flag = True
+    for i in range(len(elem) - 1):
+        if (int(elem[i]) + int(elem[i + 1])) % 2 == 0:
+            flag = False
+    if flag == True:
+        ans += 1
+print(ans)
+
+
+
 
 
 

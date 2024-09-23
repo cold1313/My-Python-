@@ -230,7 +230,14 @@ print(ans)
 
 
 
-
+from itertools import *
+x = "ГОД"
+ans = 0
+arr = product(x , repeat = 6)
+for elem in arr:
+    if (elem[0] == 'Г' or elem[0] == 'Д') and (elem[5] == 'Г' or elem[5] == 'Д'):
+        ans += 1
+print(ans)
 
 
 

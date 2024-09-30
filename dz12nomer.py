@@ -18,3 +18,9 @@ while ">1" in s or ">2" in s or ">3" in s:
         s = s.replace(">3" , "1>" , 1)
 print(s.count("1") + s.count("2") * 2)
 
+
+s = "1" * 85
+while "11111" in s:
+    s = s.replace("111" , "2" , 1)
+    s = s.replace("222" , "1" , 1)
+print(s)

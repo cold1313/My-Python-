@@ -23,3 +23,17 @@ for i in range(len(arr) - 2):
         if int(arr[i]) + int(arr[i + 1]) + int(arr[i + 2]) < summ:
             summ = int(arr[i]) + int(arr[i + 1]) + int(arr[i + 2])
 print(cnt, summ)
+
+
+
+f = open('17.txt', 'r')
+arr = list(f.readlines())
+count = 0
+max_count = -10**9
+for i in range(len(arr)):
+    for j in range(i + 1, len(arr)):
+        if (int(arr[i]) + int(arr[j])) % 10 == 0:
+            count += 1
+            if (int(arr[i]) + int(arr[j])) > max_count:
+                max_count = (int(arr[i]) + int(arr[j]))
+print(count, max_count)

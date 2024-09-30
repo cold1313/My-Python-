@@ -39,6 +39,28 @@ for i in range(49 , 200):
             count += 1
     if count == 0:
         print(i)
+2 RESHENIE: 
+
+for i in range(49 , 200):
+    s = "0" + 48 * "1" + i * "2" + "0"
+    while "00" not in s:
+        s = s.replace("02" , "101" , 1)
+        s = s.replace("11" , "2" , 1)
+        s = s.replace("012" , "30" , 1)
+        s = s.replace("010" , "00" , 1)
+    sum = s.count("1") + s.count("2") * 2 + s.count("3") * 3
+    count = 0
+    k = 2
+    while k ** 2 < sum:
+        if sum % k == 0:
+            count += 2
+        k += 1
+    if k ** 2 == sum:
+        count += 1
+    if count == 0:
+        print(i)
+        break    
+
 
 
 s =  "8" * 82

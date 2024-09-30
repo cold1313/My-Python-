@@ -25,16 +25,20 @@ while "11111" in s:
     s = s.replace("222" , "1" , 1)
 print(s)
 
-
-for i in range(48 , 200):
+for i in range(49 , 200):
     s = "0" + 48 * "1" + i * "2" + "0"
     while "00" not in s:
         s = s.replace("02" , "101" , 1)
         s = s.replace("11" , "2" , 1)
         s = s.replace("012" , "30" , 1)
         s = s.replace("010" , "00" , 1)
-    if s.count("1") + s.count("2") * 2 + s.count("3") * 3 
-    (НУЖНА ПРОВЕРКА ЧИСЛА НА ПРОСТОТУ)
+    sum = s.count("1") + s.count("2") * 2 + s.count("3") * 3
+    count = 0
+    for k in range(2 , sum):
+        if sum % k == 0:
+            count += 1
+    if count == 0:
+        print(i)
 
 
 s =  "8" * 82

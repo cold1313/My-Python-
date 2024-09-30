@@ -34,3 +34,13 @@ for i in range(48 , 200):
         s = s.replace("012" , "30" , 1)
         s = s.replace("010" , "00" , 1)
     if s.count("1") + s.count("2") * 2 + s.count("3") * 3 
+    (НУЖНА ПРОВЕРКА ЧИСЛА НА ПРОСТОТУ)
+
+
+s =  "8" * 82
+while "1111" in s or "8888" in s:
+    if "1111" in s:
+        s = s.replace("1111" , "8" , 1)
+    else:
+        s = s.replace("8888" , "11" , 1)
+print(s)

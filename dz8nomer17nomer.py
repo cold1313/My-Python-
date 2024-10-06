@@ -16,3 +16,12 @@ for i in range(len(ans) - 1):
     if Flag == True:
         count += 1
 print(count)
+
+
+from itertools import *
+arr = product("БРОНХИ" , repeat=4)
+count = 0
+for elem in arr:
+    if elem.count("Х") == 1:
+        count += 1
+print(count) 

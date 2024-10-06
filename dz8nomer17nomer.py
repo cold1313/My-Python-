@@ -25,3 +25,12 @@ for elem in arr:
     if elem.count("Х") == 1:
         count += 1
 print(count) 
+
+
+from itertools import *
+arr = product("ABCX" , repeat=5)
+count = 0
+for elem in arr:
+    if (elem.count("X") == 1 and elem[4] == "X") or (elem.count("X") == 0):
+        count += 1
+print(count)

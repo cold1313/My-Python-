@@ -27,6 +27,18 @@ for elem in arr:
 print(count) 
 
 
+14 nomer: 
+def f(x):
+    if x == 0:
+        return 0
+    if x > 0 and x % 3 == 2:
+        return f(x-1) + 1
+    if x > 0 and x % 3 < 2:
+        return f((x- x%3) / 3)
+    
+    if f(x) == 6:
+        print(x)
+
 from itertools import *
 arr = product("ABCX" , repeat=5)
 count = 0

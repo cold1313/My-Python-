@@ -105,3 +105,22 @@ for i in range(len(arr)-1):
 print(count , maxpar)
         
     
+f = open("text17" , "r")
+arr = list(f.readlines())
+maxnum = -10**9
+count = 0
+maxpar = -10**9
+for i in range(len(arr)):
+    if int(arr[i]) > maxnum and arr[i][-2] == "3":
+        maxnum = int(arr[i])
+print(maxnum)
+for i in range(len(arr) -1):
+    if arr[i][-2] == "3" and arr[i+1][-2] != "3" or arr[i][-2] != "3" and arr[i+1][-2] == "3":
+        if (int(arr[i]) ** 2 + int(arr[i+1]) ** 2) >= maxnum **2 :
+            count += 1
+            if (int(arr[i])**2 + int(arr[i+1])**2) > maxpar:
+                maxpar = int(arr[i])**2 + int(arr[i+1])**2
+print(count , maxpar)
+
+    
+

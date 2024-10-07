@@ -42,8 +42,10 @@ def f(x):
     if x > 0 and x % 3 < 2:
         return f((x- x%3) / 3)
     
+for x in range(1000):
     if f(x) == 6:
         print(x)
+        break
 
 from itertools import *
 arr = product("ABCX" , repeat=5)

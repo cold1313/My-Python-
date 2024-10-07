@@ -50,3 +50,19 @@ for i in range(len(arr)):
             if (int(arr[i]) + int(arr[j])) > max_count:
                 max_count = (int(arr[i]) + int(arr[j]))
 print(count , max_count)
+
+
+f = open("text17" , "r")
+arr = list(f.readlines())
+numofpar = 0
+maxpara = -10**9
+for i in range(len(arr)):
+    for j in range(i + 1 , len(arr)):
+        if (int(arr[i]) - int(arr[j])) % 80 == 0:
+            numofpar += 1
+            if int(arr[i]) - int(arr[j]) > maxpara:
+                maxpara = int(arr[i]) - int(arr[j])
+print(numofpar , maxpara)
+        
+        
+    

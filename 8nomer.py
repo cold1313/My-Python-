@@ -241,3 +241,20 @@ print(ans)
 
 
 
+from itertools import *
+arr = product("01234567" , repeat = 11)
+count_odd = 0
+ans = 0
+for elem in arr:
+    if elem[0] == "0":
+        continue
+    Flag = True
+    for i in range(len(elem)-1):
+        if int(arr[elem]) + int(arr[elem+1]) % 2 == 0:
+            Flag = False
+        if int(arr[elem]) % 2 == 1:
+            count_odd += 1
+    if Flag == True and count_odd == 3:
+        ans += 1
+print(ans)
+

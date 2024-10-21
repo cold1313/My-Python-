@@ -64,5 +64,21 @@ for i in range(len(arr)):
                 maxpara = int(arr[i]) - int(arr[j])
 print(numofpar , maxpara)
         
-        
+
+f = open("text17" , "r")
+arr = list(f.readlines())
+min = 10 ** 9
+count = 0
+max = - 10 ** 9
+for i in range(len(arr)):
+    if int(arr[i]) < min and abs(int(arr[i])) % 10 == 7:
+        min = int(arr[i])
+for j in range (len(arr) - 1):
+    if abs(int(arr[j])) % 10 == 7 and abs(int(arr[j+1])) % 10 != 7 or abs(int(arr[j])) % 10 != 7 and abs(int(arr[j+1])) % 10 == 7:
+        if int(arr[j])**2 + int(arr[j+1])**2 < min ** 2:
+            count += 1
+            if int(arr[j])**2 + int(arr[j+1])**2 > max:
+                max = int(arr[j])**2 + int(arr[j+1])**2
+print(count , max )
+
     

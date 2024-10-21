@@ -296,3 +296,15 @@ for i in range (1 ,  10000):
     y = int(x , 2)
     if y == 2018:
         print(i)
+
+
+for i in range (1000 , 10000):
+    x = str(i)
+    ans = 0
+    first = int(x[0] + x[1] + x[2])
+    second = int(x[1] + x[2] + x[3])
+    ans = max(first , second) - min(first , second)
+    if ans == 415:
+        print(i)
+
+

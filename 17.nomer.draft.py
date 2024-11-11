@@ -62,3 +62,19 @@ for i in range(len(arr)):
             if arr[i] + arr[j] > max:
                 max = arr[i] + arr[j]
 print(count , max)
+
+
+f = open("text17" , "r")
+arr = list(f.readlines())
+max = -10**9
+count = 0
+for i in range(len(arr)):
+    arr[i] = int(arr[i])
+    for j in range(i + 1 , len(arr)):
+        arr[j] = int(arr[j])
+        if (arr[i] + arr[j]) % 10 == 0:
+            count += 1
+            if arr[i] + arr[j] > max:
+                max = arr[i] + arr[j]
+print(count , max)
+

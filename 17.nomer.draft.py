@@ -82,3 +82,20 @@ for i in range(len(arr)):
                 max = arr[i] + arr[j]
 print(count , max)
 
+f = open('text17' , "r")
+arr = list(f.readlines())
+min = 10**9
+count = 0
+max = -10**9
+for i in range(len(arr)):
+    if arr[i][-2] == arr[i][-3] and int(arr[i]) < min:
+        min = int(arr[i])
+    arr[i] = int(arr[i])
+for i in range(len(arr) - 1):
+    if abs(arr[i])%10 == (abs(arr[i + 1])%100)//10 or abs(arr[i+1])%10 == (abs(arr[i])%100)//10:
+        if abs(arr[i])%13 == 0 and abs(arr[i+1])%13 != 0 or abs(arr[i+1])%13 == 0 and abs(arr[i])%13 != 0:
+            if arr[i] ** 2 + arr[i+1] ** 2 <= min**2:
+                count += 1
+                if arr[i] ** 2 + arr[i+1] ** 2 > max:
+                    max = arr[i] ** 2 + arr[i+1] ** 2
+print(count , max)

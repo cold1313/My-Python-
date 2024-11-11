@@ -35,19 +35,21 @@ print(count , max)
 
 7 nomer:
 
-
 f = open("text17" , "r")
 arr = list(f.readlines())
-max = -10**9
+maxnum = -10**9
 count = 0
 for i in range(len(arr)):
     arr[i] = int(arr[i])
 for i in range(len(arr) - 2):
-    if (arr[i] < arr[i+1] + arr[i+2]) and (arr[i+1] < arr[i] + arr[i+2]) and (arr[i+2] < arr[i] + arr[i+1]):
+    a = max(arr[i] , arr[i+1] , arr[i+2])
+    b = min(arr[i] , arr[i+1] , arr[i+2])
+    c = (arr[i] + arr[i+1] + arr[i+2]) - (a + b)
+    if b **2 + c ** 2 > a**2:
         count += 1
-        if arr[i] + arr[i+1] + arr[i+2] > max:
-            max = arr[i] + arr[i+1] + arr[i+2]
-print(count  , max)
+        if arr[i] + arr[i+1] + arr[i+2] > maxnum:
+            maxnum = arr[i] + arr[i+1] + arr[i+2]
+print(count  , maxnum)
 
 
 

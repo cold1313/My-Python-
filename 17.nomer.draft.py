@@ -33,6 +33,8 @@ for i in range(len(arr)):
 print(count , max)
 
 
+7 nomer:
+
 
 f = open("text17" , "r")
 arr = list(f.readlines())

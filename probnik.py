@@ -18,3 +18,9 @@ while "1111" in s or "8888" in s:
         s = s.replace('8888' , '11' , 1)
 print(s)
 
+
+for x in "0123456789ABCDEFGHIJKLMNOPQ":
+    a = int("123" + x + "24" , 27)
+    b = int("135" + x + "78" , 27)
+    if (a + b) % 26 == 0:
+        print(x , (a+b) // 26)

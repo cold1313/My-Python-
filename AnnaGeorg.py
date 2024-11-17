@@ -9,3 +9,12 @@ for elem in arr:
         count2 += 1
 print(count1 , count2)
     
+from itertools import *
+arr = product("СВЕТЛАНА" , repeat = 8)
+count = 0
+for elem in arr:
+    if elem.count("С") == 1 and elem.count("В") == 1 and elem.count("Е") == 1 and elem.count("Т") == 1:
+        if elem.count("Л") == 1 and elem.count("А") == 2 and elem.count("Н") == 1:
+            if elem.count("АА") == 0:
+                    count += 1
+print(count)

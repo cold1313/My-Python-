@@ -10,7 +10,7 @@ for elem in arr:
 print(count1 , count2)
     
 from itertools import *
-arr = product("СВЕТЛАНА" , repeat = 8)
+arr = product("СВЕТЛАН" , repeat = 8)
 count = 0
 for elem in arr:
     if elem.count("С") == 1 and elem.count("В") == 1 and elem.count("Е") == 1 and elem.count("Т") == 1:

@@ -99,3 +99,18 @@ for i in range(len(arr) - 1):
                 if arr[i] ** 2 + arr[i+1] ** 2 > max:
                     max = arr[i] ** 2 + arr[i+1] ** 2
 print(count , max)
+
+
+f = open("text17" , "r")
+arr = list(f.readlines())
+count = 0
+max = -10**9
+for i in range(len(arr)):
+    arr[i] = int(arr[i])
+    for j in range(i + 1 , len(arr)):
+        arr[j] = int(arr[j])
+        if arr[i] * arr[j] % 26 == 0:
+            count += 1
+            if arr[i] + arr[j] > max:
+                max = arr[i] + arr[j]
+print(count , max)

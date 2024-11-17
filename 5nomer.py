@@ -308,3 +308,13 @@ for i in range (1000 , 10000):
         print(i)
 
 
+for i in range(2 , 10000):
+    x = bin(i)[2:]
+    if int(x) % 3 == 0: 
+        x += x[-3]
+    if int(x) % 3 != 0:
+        x += bin(3 *(int(x) % 3))[2:]
+    y = int(x , 2)
+    if y <= 170:
+        print(y)
+

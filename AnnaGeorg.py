@@ -18,3 +18,24 @@ for elem in arr:
             if elem.count("АА") == 0:
                     count += 1
 print(count)
+
+
+for i in range(1 , 1000):
+    s = ">" + 39 * "0" + i * "1" + 39 * "2"
+    while ">1" in s or ">2" in s or ">0" in s:
+        if ">1" in s:
+            s = s.replace(">1" , "22>")
+        if ">2" in s:
+            s = s.replace('>2' , "2>")
+        if ">0" in s:
+            s = s.replace(">0" , "1>")
+        rez = s.count("2") * 2 + s.count("1")
+    m = 0
+    for i in range(1 , rez + 1):
+        if rez % i == 0:
+            m += 1
+            if m > 2:
+                break
+    if m == 2: 
+        print(i)
+        break

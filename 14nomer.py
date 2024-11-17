@@ -157,3 +157,12 @@ for x in arr:
                 if (int(a , 9) + int(b , 9) == int(c , 9)) and  w != "0" and x != "0" and z != "0":
                     print(int(x + y + z + w , 9))
                     break
+
+
+
+for i in "0123456789ABCDEF":
+    a = "8" + i + "84" + i
+    b = "78" + i + "34" 
+    rez = int(a , 16) + int(b , 16)
+    if rez % 23 == 0:
+        print(rez // 23)

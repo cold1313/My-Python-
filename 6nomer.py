@@ -25,3 +25,9 @@ for x in range(1 , 12):
         if -x/3**0.5 + 12 < y or y < x / 3 ** 0.5:
             cnt += 1
 print(cnt)
+
+
+for x in range(100):
+    if (x + 7 + 1) * (x + 7 + 1) > 900: 
+        print(x)
+        break

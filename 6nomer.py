@@ -31,3 +31,10 @@ for x in range(100):
     if (x + 7 + 1) * (x + 7 + 1) > 900: 
         print(x)
         break
+
+
+
+for x in range(100):
+    if (x + 3 + 1) * (x + 3 + 1) > 400:
+        print(x)
+        break
